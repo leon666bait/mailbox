@@ -1,0 +1,333 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/png" href="https://th.bing.com/th/id/OIP.SgLBQ9pSf3jISNSFMb3F0wHaHa?rs=1&pid=ImgDetMain">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  
+    <!--
+    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⣹⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢁⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣴⣶⣾⣿⣿⣿⣿⣶⣶⣤⣀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣿⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⡀⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡅⠠⣄⠀⠀⠀⠀⢀⠔⣱⣿⠇⠀
+⠀⠀⠀⠀⠀⠀⢐⣵⡿⢷⣦⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡑⠢⡀⠀⣡⣾⣿⠏⠀⠀
+⠀⠀⠀⠓⠒⣺⣿⣿⠄⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣴⣿⣿⣿⢇⠀⠀⠀
+⠀⠀⠀⠀⣼⣿⣿⣿⣤⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠉⢹⣿⣿⡿⡧⠁⠀⠀⠀
+⠀⠀⠀⣼⣿⣿⡏⢈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⢀⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⣹⠋⠀⠀⠀⠀⠀⠀
+⠀⠀⢰⣿⣿⣿⣄⢾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠐⣒⡛⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⢤⣾⣿⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿⠉⠓⣼⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀
+⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⠁⠀⠀⡀⢉⣽⢆⠀⣾⠿⢿⣿⠟⠟⠛⢷⣿⣿⣿⣿⡷⡄⠀⠀⠀⠀⠀
+⠀⠀⢻⣿⣿⣿⣿⣿⣿⠿⢿⣿⣿⣿⣿⣿⣿⣿⠛⠤⣤⠤⠧⠘⠛⠚⠆⠀⠀⠋⠁⣄⣨⡿⠀⢹⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀
+⠀⠀⢸⣿⣿⣿⣟⡟⠛⣟⣹⠿⣿⣿⣿⣿⣿⠿⣷⢛⡽⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠿⠋⠁⡠⢼⣿⣟⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠘⣿⣿⣿⣿⣿⣦⠘⣿⣄⠀⠙⣿⣿⠿⠷⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠀⠀⠀⠀⠀⠚⢻⣳⡟⠂⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢹⣿⣿⣿⣿⣿⣷⣜⠛⠒⠤⣽⣿⡄⠀⠀⠀⠀⠀⠀⣰⣖⢒⣶⣢⠤⠿⣄⠀⠀⠀⠀⠀⣼⡟⢱⠈⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣷⣤⣶⣿⣿⢷⣄⠀⠀⠀⠀⠀⣿⡿⣿⣿⣿⣿⡀⠻⡟⠀⠀⠀⣰⣿⡇⠘⡄⠀⠀⠀⠀⠀⠀
+⠀⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡈⠀⠀⠀⠀⠀⠙⢄⡈⠉⠹⣿⣧⠀⠘⢦⣠⣾⡿⠿⡇⠀⢻⠢⠀⠀⠀⠀⠀
+⢀⡾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⠲⠄⠀⠀⠀⠀⠀⠈⠉⠚⠋⠁⠳⣄⡸⠉⡟⠀⢀⡜⣄⡀⠧⡑⢄⠀⠀⠀
+⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⣠⣄⣤⣄⣀⡀⠀⠀⢀⣴⣿⠁⢸⠀⠀⣸⣤⠤⠀⠀⢱⡀⢢⠀⠀
+⠀⣿⣿⣿⣿⣿⣿⣿⡿⠟⠛⠛⠛⢿⣿⣿⣻⡟⠻⣿⣿⣿⣿⣿⣿⣤⣿⣿⣿⣿⣿⣿⡗⠉⠉⣋⣵⠓⡤⠄⠀⠀⠱⡀⠃⠀
+⠀⣿⣿⣿⣿⣿⡿⠋⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⡶⠆⠩⠥⣙⡿⠟⠉⠿⠋⠉⠙⢿⣿⠀⠐⢲⠗⠙⠻⣿⡄⠀⠀⠀⠑⡄⠀
+⠀⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⣇⠀⠀⠀⠀⠉⠢⠀⠀⠀⠠⠒⠉⠉⢣⡀⠊⠀⠀⠀⠹⠷⡀⠀⠀⠀⠸⡀
+⠀⠌⢿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣄⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠈⠙⠛⠒⠤⣄⡀⠀⠀⠈⠁⢠⣤⣤⣧
+⠀⠀⠈⢻⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠛⠛⠓⠲⠈⠈⠒⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⠶⠶⠞⠛⠛⠛⠛
+⠀⠀⠀⠀⠙⡦⠤⠄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠒⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+    
+    
+    Echo por :
+    https://github.com/AvastrOficial
+    -->
+</head>
+<body>
+<div class="container-header">
+	
+	<nav>
+		<div class="navbar-brand">
+			<img src="https://files.catbox.moe/t4q42g.png" height="54" alt="logo"/>
+		</div>
+		<div class="navbar-menu">
+			<div id="burguer-container">
+				<span onclick="openMenu()" class="burguer-menu">
+				  <i class="fas fa-bars"></i>
+				</span>
+			</div>
+			
+			<div id="menu-options">
+				<ul>
+					<li>
+						<a id="1" onclick="goToSection(this)">Conoceme</a>
+					</li>
+					<li>
+						<a id="2" onclick="goToSection(this)">habilidades</a>
+					</li>
+					<li>
+						<a id="3" onclick="goToSection(this)">Tienda</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+  </nav>
+	
+	
+	<div data-aos="fade-up" class="text-header">
+		<div class="text-title">
+			<h1>Hola, Soy Leo</h1>
+			<p>Conoceme en esta web</p>
+			<a id="1" onclick="goToSection(this)" class="btn">Bajar</a>
+		</div>
+	</div>
+	
+</div>
+
+	<section class="about-me" id="1-section">
+		<div data-aos="fade-up" class="profile-container">
+			<div class="profile-photo">
+				<img src="https://avatars.githubusercontent.com/u/173091356?v=4" alt="" width="250" height="250">
+			</div>
+			<h3 data-aos="fade-up">Acerca de mi</h3>
+			<p data-aos="fade-up">
+			Hola me llamo leo fundador del grupo mailbox delays, donde hay variado de contenido y metodos de redes sociales..
+<br></br> 
+<strong>⌜⌞ミ★ 𝘔𝘢𝘪𝘭𝘣𝘰𝘹 𝘥𝘦 '𝘢𝘺𝘴 🔥 ⏤͟͟͞͞★</strong> 
+			</p>
+		
+		</div>
+	</section>
+
+<div class="separator"></div>
+
+<section class="skills" id="2-section">
+	<div class="skills-container">
+		<h3 data-aos="fade-up">habilidades</h3>
+	
+		<div data-aos="fade-up" class="row skills-card">
+			<div data-aos="fade-up" class="column col-6 column-separator">
+				<h4>
+					Personales
+				</h4>
+				<p>
+					<strong>Mis caracteristicas </strong>, que hacen parte de mi ser para ser un buen lider
+				</p>
+				<ul>
+					<li>
+						Pensamiento agil y facilidad para el aprendizaje de conceptos logicos.
+					</li>
+					<li>
+						Alto nivel de autoconocimiento con el exito de los objetivos.
+					</li>
+				</ul>
+			</div>
+			<div data-aos="fade-up" class="column col-6">
+				<h4>
+					Tecnicas
+				</h4>
+				<p>
+					<strong>habilidades tecnicas</strong> y <strong>web</strong>, que constantemente estoy fortaleciendo y las aplico al maximo!
+				</p>
+				<ul data-aos="fade-up" class="tech-icons">
+					<li>
+						<img src="https://img.icons8.com/color/96/000000/html-5.png">
+						<img src="https://img.icons8.com/color/96/000000/css3.png">
+						<img src="https://img.icons8.com/color/96/000000/javascript.png">
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="separator" style="margin-top: 50px"></div>
+
+<section class="jobs" id="3-section">
+	<div class="jobs-container">
+		<h3 data-aos="fade-up">Mis Tienda</h3>
+		<p data-aos="fade-up">
+			Mira algunos de mis articulos en venta en <strong>Telegram</strong>
+		</p>
+		<div>
+			<div data-aos="fade-up" class="row">
+				
+				<div class="column col-4">
+					
+					<div class="card-job">
+						
+						<div class="card-img-job">
+							<img src="https://static.vecteezy.com/system/resources/previews/018/910/740/original/telegram-logo-telegram-icon-free-free-vector.jpg" alt="">
+						</div>
+						<div data-aos="fade-up" class="card-body">
+							<h4>Método de desbanear telegram</h4>
+							<p>
+						Este método consiste en
+volver activar tu linea de telegram..
+Es un word con los paso y procedimientos.
+Precios: 20 usd
+							</p>
+							<a href="https://t.me/Leonhz" target="_blank" class="card-btn">Comprar</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="column col-4">
+					
+					<div class="card-job">
+						
+						<div class="card-img-job">
+							<img src="https://static.vecteezy.com/system/resources/previews/006/874/233/original/netflix-logo-icon-on-white-background-free-vector.jpg" alt="">
+						</div>
+						<div data-aos="fade-up" class="card-body">
+							<h4>método de Netflix</h4>
+							<p>
+						es una guia,con pdf y procedimientos para tener cuenta premium de Netflix.
+Precio: 15 usd
+							</p>
+							<a href="https://t.me/Leonhz" target="_blank" class="card-btn">Comprar</a>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+				<div class="column col-4">
+					<div class="card-job">
+						<div class="card-img-job">
+							<img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png" alt="">
+						</div>
+						<div data-aos="fade-up" class="card-body">
+							<h4>método de desbanear WhatsApp</h4>
+							<p>
+este método consiste en hacer procedimiento para salir de soporte tecnico.. y poder activar tu WhatsApp normal.
+Precio:20 usd
+							</p>
+							<a href="https://t.me/Leonhz" target="_blank" class="card-btn">Comprar</a>
+						</div>
+					</div>	
+				</div>
+
+        	<div class="column col-4">
+					<div class="card-job">
+						<div class="card-img-job">
+							<img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-icone-2.png" alt="">
+						</div>
+						<div data-aos="fade-up" class="card-body">
+							<h4>WhatsApp visual</h4>
+							<p>
+Es un modz modificado para ver número en soporte..con nombre, imagen,que pidas
+Precio: 10 usd
+							</p>
+							<a href="https://t.me/Leonhz" target="_blank" class="card-btn">Comprar</a>
+						</div>
+					</div>	
+				</div>
+        
+        	<div class="column col-4">
+					<div class="card-job">
+						<div class="card-img-job">
+							<img src="https://th.bing.com/th/id/OIP.2Ece0gBRJjRX1S0cMYhxbAHaHa?rs=1&pid=ImgDetMain" alt="">
+						</div>
+						<div data-aos="fade-up" class="card-body">
+							<h4>manual de word avanzado</h4>
+							<p>
+formato pdf.. explicación y paso a paso.
+Precios: 30 usd
+							</p>
+							<a href="https://t.me/Leonhz" target="_blank" class="card-btn">Comprar</a>
+						</div>
+					</div>	
+				</div>
+        
+        	<div class="column col-4">
+					<div class="card-job">
+						<div class="card-img-job">
+							<img src="https://th.bing.com/th/id/OIP.mDPqzlvExK066Yshky2F7QHaHa?rs=1&pid=ImgDetMain" alt="">
+						</div>
+						<div data-aos="fade-up" class="card-body">
+							<h4> Números+54 </h4>
+							<p>
+ Venta de numeros de : argentina para Whatsapp y telegram.
+							</p>
+							<a href="https://t.me/Leonhz" target="_blank" class="card-btn">Comprar</a>
+						</div>
+					</div>	
+				</div>
+
+
+
+				
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section class="contact-me">
+	<div class="contact-me-p">
+		<div class="card-contact-me">
+			
+			<div data-aos="fade-up" class="row">
+				<div class="column col-6">
+					<p class="card-start-proyect mg-bt">
+						Quieres enviar un mensaje a mi correo!
+					</p>
+					<a class="card-contact-btn" href="leoismaale2@gmail.com">Contactame</a>
+				</div>
+				<div class="column col-6">
+					<p class="card-start-proyect-1">
+						Te encuentras interead@ en Comprar un articulo? Una buena charla puede dar inicio a un gran compra!
+					</p>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<div data-aos="fade-up" class="social-networks-container">
+		<div class="network-icons">
+			<ul class="list-networks">
+			
+				<li class="icon">
+					<a class="github" href="https://github.com/leon666bait" target="_blank">
+						<i class="fab fa-github"></i>
+					</a>
+				</li>
+        
+        	<li class="icon">
+					<a class="facebook" href="https://www.facebook.com/profile.php?id=100088505100696&mibextid=qi2Omg&rdid=Y15EY6xWRFUMUafU" target="_blank">
+						<i class="fab fa-facebook"></i>
+
+	<li class="icon">
+					<a class="facebook" href="https://t.me/+MpGQjn1Y_-IyYmYx" target="_blank">
+						  <i class="fab fa-telegram"></i>
+					</a>
+				</li>
+        
+        
+      <li class="icon">
+					<a class="facebook" href="https://www.youtube.com/@nemea34" target="_blank">
+						  <i class="fab fa-youtube"></i>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+		
+		<div class="credits">
+			<p>
+				<script type="text/javascript">
+					copyright=new Date();
+					update=copyright.getFullYear();
+					document.write("Echo por @AvaStrOficial - © "+update);
+				</script>
+			</p>
+		</div>
+	</div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>
